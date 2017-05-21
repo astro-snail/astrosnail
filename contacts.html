@@ -1,0 +1,59 @@
+<html>
+    
+    <head>
+        <title>Contact Form</title>
+        
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Java and Web development: coding examples."/>      
+              
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        <!-- Open Graph properties -->
+        <meta property="og:title" content="Java and Web Development"/>
+        <meta property="og:description" content="Java and Web development: coding examples."/>
+        <meta property="og:url" content="http://astrosnail.com"/>
+        <meta property="og:image" content="http://astrosnail.com/images/trees_and_sky.jpg"/> 
+        
+    </head>
+
+    <body>
+        <div class="row centred navigation-home">
+            <a href="index.html"><img src="images/glyphicons-21-home.png"></a>
+        </div>
+        
+        <div class="centred">
+            <form name="contactForm" action="form-to-email.php" method="post">
+                
+                <div class="row">
+                    <div class="col-2"><label for="firstName">First name:</label></div>
+                    <div class="col-4"><input type="text" placeholder="First name" name="firstName" required/></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-2"><label for="lastName">Last name:</label></div>
+                    <div class="col-4"><input type="text" placeholder="Last name" name="lastName" required/></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-2"><label for="emailAddress">E-Mail address:</label></div>
+                    <div class="col-4"><input type="email" placeholder="E-Mail address" name="emailAddress" required/></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-2"><label for="comments">Your comments:</label></div>
+                    <div class="col-4"><textarea rows="10" cols="50" name="comments"></textarea></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-2">&nbsp;</div>
+                    <div class="col-4"><input type="submit" name="submit" value="Send"/></div>
+                </div>  
+                
+            </form>
+        </div>        
+        
+    </body>
+    
+</html>    

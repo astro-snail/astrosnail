@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2vh;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#header {
+    height: 24.5vh;
+    margin: 0vh 2vh;
+    padding-top: 1;
+    border-bottom: 1px black solid;
+}
+
+#container {
+    height: 75vh;
+    margin: 0vh 2vh;
+}
+
+#shape {
+    position: relative;
+    display: none;
+}
+
+#bestResult {
+    background-color: green;
+    color: white;
+}

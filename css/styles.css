@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@keyframes slideshow {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+@-webkit-keyframes slideshow {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+div#slider { 
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%; 
+    float: left; 
+}
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 30s slideshow infinite; 
+  -webkit-animation-name: slideshow;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+#top {
+    top: 0;
+    height: 100px;
+    line-height: 100px;
+    background-image: url(../images/trees_and_sky.jpg)
+}
+
+#bottom {
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #E3EBF8;
+}
+
+#content {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.navigation-home {
+    padding: 10px 0px;
+}
+
+.centred {
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.centred-text {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px #141517;
+}
+
+#menu {
+    font-weight: bold;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#menu li:hover {
+    background-color: #E3EBF8;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover {
+    text-decoration: none;
+}
+
+.menu-item {
+    display: table;
+    height: 45px;
+    width: 100%;
+    padding: 5px 20px;
+}
+            
+.menu-item-image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.menu-item-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Hidden submenu */
+#menu li ul {
+    display: none;
+    min-width: 100%;
+}
+
+#menu li li {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #menu ul li {
+        float: left;
+        position: relative; /* important for positioning of submenu */
+    }
+    
+    #menu li ul {
+        position: absolute;
+        left: 0px;
+        top: 45px;
+        min-width: 250px;
+        z-index: 100;
+        background-color: white;
+    }
+    
+    #menu li {
+        max-width: 100%;
+    }
+}
+        
+#menu li:hover ul {
+    display: block;
+}
+
+#bottom img {
+    vertical-align: middle;
+}
+
+form {
+    font-size: 14px;
+}
+
+form label {
+    font-style: italic;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+input {
+    height: 30px;
+}
+
+input[type=submit] {
+    width: 50%;
+}
+
+/*.top::after {
+    content: "";
+    background: url(../images/trees_and_sky.jpg);
+    opacity: 1; 
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}*/
