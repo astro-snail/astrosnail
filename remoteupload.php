@@ -3,6 +3,9 @@
 $data = json_decode(file_get_contents('php://input'), true);
 print_r($data);
 
+$url = $data["repository"]["url"];
+echo $url, PHP_EOL;
+
 $clone_url = $data["repository"]["clone_url"];
 echo $clone_url, PHP_EOL;
 
@@ -12,33 +15,28 @@ echo $contents_url, PHP_EOL;
 $contents = json_decode(file_get_contents($contents_url), true);
 print_r($contents);
 
+foreach ($contents as $file) {
 
+    echo $file, PHP_EOL;	
 
-/*// maximum execution time in seconds
-set_time_limit (24 * 60 * 60);
+    $path = $file["path"];
 
-// folder to save downloaded files to. must end with slash
-$destination_folder = 'files/';
+    $is_dir = ($file["type"] == "dir");
+    if ($is_dir) {
 
-$url = $_POST['url'];
-$newfname = $destination_folder . basename($url);
+    } else {
+        $download_url = $file["download_url"];
+        echo $download_url, PHP_EOL;
 
-$file = fopen ($url, "rb");
-if ($file) {
-  $newf = fopen ($newfname, "wb");
-
-  if ($newf)
-  while(!feof($file)) {
-    fwrite($newf, fread($file, 1024 * 8 ), 1024 * 8 );
-  }
+        $copy = copy($download_url, $path);
+ 
+        if( !$copy ) {
+            echo "Failed to copy $path\n";
+        }
+        else{
+            echo "Successfully copied $path\n";
+        }
+    }
 }
-
-if ($file) {
-  fclose($file);
-}
-
-if ($newf) {
-  fclose($newf);
-}*/
 
 ?>
