@@ -13,6 +13,7 @@ $contents_url = strstr($data["repository"]["contents_url"],"{", true);
 $contents_url = substr($contents_url, 0, strlen($contents_url)-1);
 echo $contents_url, PHP_EOL;
 
-exec('php copy-files.php "' . addslashes($contents_url) . '"');
+exec('php copy-files.php "' . addslashes($contents_url) . '"', $output);
+print_r($output);
 
 ?>
