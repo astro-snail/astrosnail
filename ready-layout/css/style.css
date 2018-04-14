@@ -51,7 +51,7 @@ a.button:active {
 }
 
 .slide {
-    width: 100%;
+    min-width: fit-content;
     min-height: 700px;
     background-color: #abeafa;
     font-family: "Raleway", sans-serif;
@@ -133,6 +133,7 @@ a.button:active {
 }
 
 .content {
+    min-width: fit-content;
     background-color: #f8f8f8;
 }
 
@@ -455,7 +456,7 @@ li:hover > .submenu {
 }
 
 .footer {
-    width: 100%;
+    min-width: fit-content;
 }
 
 .footer-blocks {
