@@ -134,13 +134,16 @@ li > a {
   padding: 10px 40px;
   color: #000000;
 }
-li > .submenu {
+li .submenu {
   display: none;
 }
-li:hover > .submenu {
+li:hover .submenu {
   display: block;
 }
 @media all and (min-width: 992px) {
+  li:hover .submenu {
+    display: none;
+  }
   li:hover > .submenu {
     display: block;
     position: absolute;

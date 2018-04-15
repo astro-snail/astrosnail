@@ -178,17 +178,21 @@ li {
         color: #000000;
     }
     
-    & > .submenu {
+    & .submenu {
         display: none;
     }
 
-    &:hover > .submenu {
+    &:hover .submenu {  
         display: block;
     }
 }
 
 @media all and (min-width: 992px) {
     
+    li:hover .submenu {  
+        display: none;
+    }
+        
     li:hover > .submenu {
         display: block;
         position: absolute;
