@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 30px;
+}
+
+#snake-field {
+    background: black;
+    border: 1px solid green;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;   
+    margin-top: 20px;
+}
+
+.button {
+    width: 150px;
+    padding: 15px;
+    color: white;
+    background: green;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game-table {
+    border-collapse: collapse;
+}
+
+td.game-table-cell {
+    width: 15px;
+    height: 15px;
+    border: 1px dotted #eee;
+}
+
+.snake-unit {
+    background: white;
+}
+
+.food-unit {
+    background: red;
+}
+
+.obstacle-unit {
+    background: yellow;
+}
