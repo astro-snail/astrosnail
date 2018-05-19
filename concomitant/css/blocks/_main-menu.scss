@@ -1,0 +1,37 @@
+.b-main-menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+
+    &__item {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 5px 0;
+        
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+        
+        &:hover {
+            color: #000;
+            cursor: pointer;
+        }
+        
+        @media (min-width: 650px) {
+            float: left;
+            padding: 0;
+            
+            &:not(:last-child) {
+                padding-right: 20px;
+            }
+        }
+    }
+}

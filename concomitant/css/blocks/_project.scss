@@ -1,0 +1,48 @@
+.b-project {
+        
+    &__image {
+        border: 1px solid #e2e2e2;
+        background-color: #fff;
+        width: 210px;
+        height: 140px;
+        padding: 4px;
+    }
+    
+    &__image-inside {
+        width: 200px;
+        height: 130px;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 55px 0;
+    }
+    
+    &__title {
+        color: #444;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-transform: capitalize;
+        margin-top: 20px;
+    }
+    
+    &__text {
+        color: #878787;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.8px;
+        margin-top: 15px;
+    }
+    
+    &__link-more {
+        color: #81b300;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: right;
+        text-transform: capitalize;
+        margin-top: 15px;
+    }
+}

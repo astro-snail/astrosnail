@@ -1,0 +1,16 @@
+.b-contacts {
+    max-width: 960px;
+    padding: 40px 30px;
+    background-color: #3b3b3b;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

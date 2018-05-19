@@ -1,0 +1,37 @@
+.b-search-form {
+    overflow: hidden;
+    
+    &__input {
+        width: 100%;
+        height: 30px;
+        padding: 9px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        color: #7f7f7f;
+        font-size: 12px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #7f7f7f;
+            text-transform: capitalize;
+        }
+        
+        @media (min-width: 360px) {
+            float: left;   
+            width: 200px;
+            border-right: 1px solid #ddd;
+        }
+    }
+
+    &__input_button {
+        padding: 9px 5px;
+        color: #81b300;
+        font-weight: 700;
+        text-transform: uppercase;
+                
+        @media (min-width: 360px) {
+            width: 80px;
+        }
+    }
+}

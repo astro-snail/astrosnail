@@ -1,0 +1,39 @@
+.b-main {
+    max-width: 960px;
+    padding: 50px 30px;
+    background-color: #fff;
+
+    &__tools {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+    &__divider {
+        height: 1px;
+        background-color: #e2e2e2;
+        margin: 50px 0;
+    }
+
+    &__projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

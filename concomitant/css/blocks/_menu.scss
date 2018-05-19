@@ -1,0 +1,22 @@
+.b-menu {
+    max-width: 960px;
+    min-height: 70px;
+    background-color: #81b300;
+    padding: 20px 30px;
+
+    &__main-menu {
+        @media (min-width: 992px) {
+            float: left;
+            padding: 5px 0;
+        }
+    }
+
+    &__search-form {
+        padding-top: 20px;
+        
+        @media (min-width: 992px) {
+            float: right;
+            padding-top: 0;
+        }
+    }
+}

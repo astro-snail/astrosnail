@@ -1,0 +1,25 @@
+.b-copyright {
+    max-width: 960px;
+    min-height: 60px;
+    background-color: #2e2e2e;
+    padding: 20px 30px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    
+    &__text-left {
+        @media (min-width: 576px) {
+            float: left;
+        }
+    }
+    
+    &__text-right {
+        padding-top: 10px;
+        
+        @media (min-width: 576px) {
+            float: right;
+            padding-top: 0;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.b-social-icons {
+    width: 250px;
+    height: 50px;
+    background-color: #81b300;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background-color: #1f1f1f;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: #00acee;
+            cursor: pointer;
+        }
+    }
+
+    &__icon_linkedin {
+        background-image: url(../images/icon-linkedin.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__icon_twitter {
+        background-image: url(../images/icon-twitter.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__icon_pinterest {
+        background-image: url(../images/icon-pinterest.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__icon_google-plus {
+        background-image: url(../images/icon-google-plus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__icon_rss {
+        background-image: url(../images/icon-rss.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

@@ -1,0 +1,42 @@
+.b-tool {
+    text-align: center;    
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    &__image_group {
+        background: url(../images/icon-group.png) center center no-repeat;    
+    }
+
+    &__image_globe {
+        background: url(../images/icon-globe.png) center center no-repeat;    
+    }
+
+    &__image_cogs {
+        background: url(../images/icon-cogs.png) center center no-repeat;    
+    }
+
+    &__image_leaf {
+        background: url(../images/icon-leaf.png) center center no-repeat;    
+    }
+
+    &__title {
+        color: #81b300;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-transform: capitalize;
+        margin-top: 20px;
+    }
+
+    &__text {
+        color: #888;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.8px;
+        margin-top: 20px;
+    }
+}
