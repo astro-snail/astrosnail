@@ -1,0 +1,19 @@
+.b-footer {
+    min-height: 90px;
+    background-color: $backgroundColour;
+    padding: 25px 0;
+    
+    &__text {
+        color: $textColour;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    
+    &__social-icons {
+        width: 175px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

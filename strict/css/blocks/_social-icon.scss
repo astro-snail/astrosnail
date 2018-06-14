@@ -1,0 +1,20 @@
+.b-social-icon {
+    @include squareButton($bannerColour, $socialIcon, $socialIcon);
+    border-radius: 2px;
+        
+    &_facebook:hover {
+        background-color: $facebook;
+    }
+    
+    &_twitter:hover {
+        background-color: $twitter;
+    }
+    
+    &_googleplus:hover {
+        background-color: $googleplus; 
+    }
+    
+    &_linkedin:hover {
+        background-color: $linkedin; 
+    }
+}

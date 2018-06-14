@@ -1,0 +1,62 @@
+@mixin anchor($_colour) {
+    display: block;
+    text-decoration: none;
+    color: $_colour;
+    
+    &:hover {
+        text-decoration: none;
+        color: $_colour;
+    }
+}
+
+@mixin roundedBorder($_colour) {
+    border: 1px solid $_colour;
+    border-radius: 2px;
+}
+
+@mixin squareButton($_colour, $_bgColour, $_bgColourHovered) {
+    
+    @include anchor($_colour);
+    
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    background-color: $_bgColour;
+    
+    &:hover {
+        background-color: $_bgColourHovered;
+    }
+}
+
+@mixin formFieldFont($_colour) {
+    font-family: $fontFamily;
+    color: $_colour;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@mixin formField($_height) {
+    @include formFieldFont($textColour);
+    @include roundedBorder($textColour);
+
+    display: block;
+    width: 100%;
+    height: $_height;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    &::placeholder {
+        @include formFieldFont($textColour);
+    }
+    
+    &:focus {
+        @include formFieldFont($focusColour);
+        
+        border-color: $focusColour;
+        outline: none;
+    }
+}

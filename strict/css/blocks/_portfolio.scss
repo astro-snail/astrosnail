@@ -1,0 +1,43 @@
+.b-portfolio {
+    min-height: 900px;
+    background-color: $backgroundColour;
+    padding: 80px 0;
+    
+    &__title {
+        color: $titleColour;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        color: $portfolioTextColour;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    &__projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        @media (min-width: 992px) {
+            justify-content: space-between;
+        }
+        
+        &_hidden {
+            display: none;
+        }
+    }
+    
+    &__project {
+        margin-bottom: 30px;
+    }
+}

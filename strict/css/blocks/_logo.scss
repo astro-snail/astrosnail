@@ -1,0 +1,40 @@
+.b-logo {
+    width: 155px;
+    height: 37px;
+    
+    &__image {
+        float: left;
+        padding-right: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 15px);
+        grid-gap: 4px;
+    }
+    
+    &__square {
+        width: 15px;
+        height: 15px;
+        
+        &_light {
+            background-color: $logoSquareLight;
+        }
+        
+        &_dark {
+            background-color: $logoSquareDark;
+        }
+        
+        &_down {
+            position: relative;
+            top: 3px;
+        }
+    }
+    
+    &__text {
+        float: left;
+        color: $titleColour;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 3.5px 0;
+    }
+}

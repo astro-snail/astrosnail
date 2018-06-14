@@ -1,0 +1,48 @@
+.b-feature {
+    width: 310px;
+    text-align: center;
+    
+    &__image {
+        width: 100px;
+        height: 100px;
+        background-color: $featureLight;
+        border-radius: 2px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    &__darker-half {
+        width: 50%;
+        height: 100%;
+        background-color: $featureDark;
+        border-radius: 2px;
+    }
+    
+    &__icon {
+        color: $bannerColour;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 2;
+        text-align: center; 
+        text-shadow: 0px 1px 1px rgba(2, 2, 2, 0.4);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &__title {
+        color: $titleColour;
+        font-size: 22px;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+    
+    &__text {
+        color: $textColour;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.45;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+.b-about {
+    min-height: 340px;
+    background-color: $backgroundColour;
+    padding: 60px 0; 
+    text-align: center;
+    
+    &__title {
+        color: $titleColour;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    
+    &__text {
+        color: $textColour;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+}

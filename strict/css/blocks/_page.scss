@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+// Bootstrap class
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1170px;
+    }
+}
+
+.b-page {
+    padding: 0;
+    margin: 0; 
+    width: 100%;
+    height: 100%;
+    font-family: $fontFamily;
+}

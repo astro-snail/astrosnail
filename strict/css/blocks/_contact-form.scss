@@ -1,0 +1,77 @@
+.b-contact-form {
+    &__title {
+        color: $bannerColour;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        color: $textColour;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &__form {
+        max-width: 555px;
+        margin: 0 auto;
+    }
+    
+    &__input {
+        @include formField(62px);
+    }
+    
+    &__textarea {
+        resize: none;
+        @include formField(162px);
+    }
+    
+    &__inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    &__button {
+        @include roundedBorder($bannerBorderColour);
+        
+        display: block;
+        width: 142px;
+        height: 47px;
+        background-color: transparent;
+        color: $focusColour;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 2.5;
+        text-align: center;
+        
+        &:hover {
+            background-color: $bannerBorderColour;
+        }
+    }
+    
+    &__label {    
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        user-select: none;
+        color: $focusColour;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 400;
+    }
+    
+    &__checkbox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+    }
+}
