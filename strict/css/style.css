@@ -60,7 +60,8 @@
 .b-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/ballpen-blur-close-up-461077.jpg) center center no-repeat;
   background-size: cover;
-  padding: 90px 0;
+  padding-top: 120px;
+  padding-bottom: 90px;
   color: #fff;
   text-align: center;
 }
