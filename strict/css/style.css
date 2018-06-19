@@ -474,8 +474,12 @@
   color: #999;
   font-size: 15px;
   font-weight: 400;
-  /*line-height: 20px;
-  padding: 10px 0;*/
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .b-footer__text {
+    padding: 10px 0;
+  }
 }
 .b-footer__social-icons {
   width: 175px;
