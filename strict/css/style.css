@@ -207,11 +207,9 @@
 .b-portfolio {
   background-color: #f6f9f9;
   padding: 80px 0;
-}
-@media (min-width: 480px) {
-  .b-portfolio {
-    min-height: 900px;
-  }
+  /*@media (min-width: 480px) {
+      min-height: 900px;
+  }*/
 }
 .b-portfolio__title {
   color: #2d3950;
@@ -476,8 +474,8 @@
   color: #999;
   font-size: 15px;
   font-weight: 400;
-  line-height: 20px;
-  padding: 10px 0;
+  /*line-height: 20px;
+  padding: 10px 0;*/
 }
 .b-footer__social-icons {
   width: 175px;
