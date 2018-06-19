@@ -1,7 +1,10 @@
 .b-portfolio {
-    min-height: 900px;
     background-color: $backgroundColour;
     padding: 80px 0;
+    
+    @media (min-width: 480px) {
+        min-height: 900px;
+    }
     
     &__title {
         color: $titleColour;

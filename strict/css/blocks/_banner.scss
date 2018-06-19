@@ -1,18 +1,25 @@
 .b-banner {
-    min-height: 800px;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/ballpen-blur-close-up-461077.jpg) center center no-repeat;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 90px;
+    padding: 90px 0;
     color: $bannerColour;
     text-align: center;
+     
+    @media (min-width: 480px) {
+        padding-top: 200px;
+        min-height: 800px;
+    }
     
     &__title {
-        font-size: 120px;
+        font-size: 85px;
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
         margin-bottom: 20px;
+        
+        @media (min-width: 480px) {
+            font-size: 120px;
+        }
     }
     
     &__line {
@@ -52,6 +59,10 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 1;
-        margin-top: 170px;
+        margin-top: 70px;
+        
+        @media (min-width: 480px) {
+            margin-top: 170px;
+        }
     }
 }

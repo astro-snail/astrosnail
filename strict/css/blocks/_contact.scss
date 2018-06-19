@@ -1,6 +1,9 @@
 .b-contact {
-    min-height: 700px;
     background: linear-gradient(rgba(20, 30, 50, 0.7), rgba(20, 30, 50, 0.7)), url(../images/asphalt-fog-foggy-229014.jpg) center center no-repeat;
     background-size: cover;
     padding: 70px 0;
+    
+    @media (min-width: 480px) {
+        min-height: 700px;
+    }
 }
